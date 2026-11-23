@@ -1,0 +1,34 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+.env.local
+.env.*.local
+supabase/.env.local
+supabase/.env.*.local
+
+# CycleCue local backups and temporary files
+.cyclecue-backups/
+cyclecue-quality-fix-patch/
+*.bak
+
+# Local environment credentials
+.env
+.env.*
+!.env.example
+
+# Supabase local CLI state
+supabase/.temp/
+
+# Local build and deployment files
+node_modules/
+dist/
+.vercel/
+coverage/

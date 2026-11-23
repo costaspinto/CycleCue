@@ -1,0 +1,21 @@
+import { defineConfig } from 'vitest/config';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    environment: 'jsdom',
+    include: ['src/test/**/*.test.ts', 'src/test/**/*.test.tsx'],
+    exclude: [
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/coverage/**',
+      '**/.cyclecue-backups/**',
+      '**/cyclecue-*-patch/**',
+    ],
+    coverage: {
+      reporter: ['text', 'html'],
+      include: ['src/lib/**/*.ts'],
+    },
+  },
+});

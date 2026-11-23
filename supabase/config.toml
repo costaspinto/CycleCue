@@ -1,0 +1,2 @@
+[functions.health-assistant]
+verify_jwt = true
